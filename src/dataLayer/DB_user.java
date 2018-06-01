@@ -8,8 +8,8 @@ public class DB_user {
     static final String JDBC_DRIVER = "com.mysql.jdbc.Driver";
     static final String DB_URL = "jdbc:mysql://52.167.225.0:3307/SDRW";
 
-    static final String USER = "jtapiase";
-    static final String PASSWORD = "pass123";
+    static final String USER = "userd2r";
+    static final String PASSWORD = "D2R/user*";
 
     public boolean isValidUserLogin(String sUserName, String sUserPassword){
 
@@ -35,7 +35,7 @@ public class DB_user {
             System.out.println("Creating statement");
             stmt = conn.createStatement();
 
-            sql = "SELECT * FROM user";
+            sql = "SELECT * FROM medicamentos_pos";
 
             System.out.println(sql);
 
