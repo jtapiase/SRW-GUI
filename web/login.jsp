@@ -9,18 +9,27 @@
 <html>
 <head>
     <title>Login</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
-    <h1>Por favor, inicie sesión</h1>
+    <div class="navbar">
+        <div class="navbar-left">
+            <a href="login.jsp">Login</a>
+            <a href="index.jsp">Index</a>
+        </div>
+    </div>
+    <div class="main-div">
+        <h1>Por favor, inicie sesión</h1>
+        <form action="/login" method="post">
+            Ingrese usuario: <input type="text" name="usuario" width="45"/>
+            <p></p>
+            Ingrese Contraseña: <input type="password" name="password" width="45"/>
+            <p></p>
+            <button class="login-btn" type="submit" value="log-In">login</button>
+        </form>
+        <p>${confirmation}</p>
+    </div>
 
-    <form action="/login" method="post">
-        Ingrese usuario: <input type="text" name="usuario" width="45"/>
-        <p></p>
-        Ingrese Contraseña: <input type="password" name="password" width="45"/>
-        <p></p>
-        <input type="submit" value="log-In"/>
-    </form>
 
-    <p style="color:red">${confirmation}</p>
 </body>
 </html>

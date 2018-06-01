@@ -9,11 +9,19 @@
 <html>
 <head>
     <title>SRW</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
-<h1>
-    Software de recomendacion para medicamentos.
-</h1>
-
+<div class="navbar">
+    <div class="navbar-left">
+        <a href="login.jsp">Login</a>
+        <a href="index.jsp">Index</a>
+    </div>
+</div>
+<div class="main-div">
+    <h1>
+        Software de recomendacion para medicamentos.
+    </h1>
+</div>
 </body>
 </html>
