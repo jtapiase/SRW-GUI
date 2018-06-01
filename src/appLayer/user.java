@@ -13,4 +13,9 @@ public class user {
         DB_user user = new DB_user();
         user.register(sUsername, sUserPassword);
     }
+
+    public void calificar(int calificacion, String id){
+        DB_user user = new DB_user();
+        user.calificar(calificacion, id);
+    }
 }

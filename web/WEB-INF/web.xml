@@ -23,4 +23,14 @@
         <url-pattern>/signin</url-pattern>
     </servlet-mapping>
 
+    <servlet>
+        <servlet-name>calificar</servlet-name>
+        <servlet-class>webapp.calificar</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>calificar</servlet-name>
+        <url-pattern>/calificar</url-pattern>
+    </servlet-mapping>
+
 </web-app>

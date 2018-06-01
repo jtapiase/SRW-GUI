@@ -9,18 +9,13 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
-@WebServlet(name = "login")
-public class login extends HttpServlet {
+@WebServlet(name = "calificar")
+public class calificar extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-
         user user = new user();
-
-        if(user.isValidUserCredentials(request.getParameter("usuario"), request.getParameter("password"))){
-            request.setAttribute("usuario", request.getParameter("usuario"));
-            request.getRequestDispatcher("/principal.jsp").forward(request, response);
-        }else{
-            request.getRequestDispatcher("/signin.jsp").forward(request, response);
-        }
+        user.calificar(Integer.parseInt(request.getParameter("calificacion")), request.getParameter("id"));
+        request.setAttribute("usuario", request.getParameter("id"));
+        request.getRequestDispatcher("/principal.jsp").forward(request,response);
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
