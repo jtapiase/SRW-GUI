@@ -21,6 +21,6 @@
         <input type="submit" value="log-In"/>
     </form>
 
-    <p style="color:red">${errorMessage}</p>
+    <p style="color:red">${confirmation}</p>
 </body>
 </html>

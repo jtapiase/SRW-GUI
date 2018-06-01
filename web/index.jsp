@@ -15,15 +15,5 @@
     Software de recomendacion para medicamentos.
 </h1>
 
-<form>
-    Ingrese usuario: <input type="text" name="usuario" width="45"/>
-    <p></p>
-    Ingrese Contraseña: <input type="password" name="password" width="45"/>
-    <p></p>
-    <input type="submit" value="log-In"/>
-    <input type="submit" value="Sign-In"/>
-
-</form>
-
 </body>
 </html>
