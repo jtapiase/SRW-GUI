@@ -92,7 +92,7 @@ public class DB_user {
             System.out.println("Creating statement");
             stmt = conn.createStatement();
 
-            sql = "INSERT INTO usuariosVALUES ('"+sUserName+"','"+sUserPassword+"')";
+            sql = "INSERT INTO usuarios VALUES ('"+sUserName+"','"+sUserPassword+"')";
 
 
             System.out.println(sql);

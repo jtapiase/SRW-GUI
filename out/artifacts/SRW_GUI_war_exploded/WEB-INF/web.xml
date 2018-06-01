@@ -13,4 +13,14 @@
         <url-pattern>/login</url-pattern>
     </servlet-mapping>
 
+    <servlet>
+        <servlet-name>signin</servlet-name>
+        <servlet-class>webapp.signin</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>signin</servlet-name>
+        <url-pattern>/signin</url-pattern>
+    </servlet-mapping>
+
 </web-app>
